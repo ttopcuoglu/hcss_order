@@ -1,129 +1,264 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"/>
-    <link rel="stylesheet" href="css/style1.css"/>
-      <!-- Additional CSS must be placed after Bootstrap CSS -->
-      <script src="https://kit.fontawesome.com/5400043de2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+    <script src="https://kit.fontawesome.com/5400043de2.js" crossorigin="anonymous"></script>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>HCSS Work Order Online</title>
 </head>
-<header>
-    <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenuContent" aria-controls="navbarMenuContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarMenuContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa-solid fa-link"></i> Power Links
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Staff PowerSchool Login</a>
-                <a class="dropdown-item" href="#">HCSS Instructional Model Guides</a>
-                <a class="dropdown-item" href="#">Bell Schedules</a>
-                <a class="dropdown-item" href="#">Substitution-East</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa-solid fa-square-poll-horizontal"></i> Online Forms(East)
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Activity Request Form - East</a>
-                <a class="dropdown-item" href="#">Pre-Entry Health Screening Form</a>
-                <a class="dropdown-item" href="#">CST Referral Form-HCSS </a>
-                <a class="dropdown-item" href="#">Counseling Meetings</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa-solid fa-square-poll-horizontal"></i> Online Forms(West)
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Activity Request Form - East</a>
-                  <a class="dropdown-item" href="#">CST Referral Form-HCSS </a>
-                  <a class="dropdown-item" href="#">Film Form</a>
-                  <a class="dropdown-item" href="#">Food Form</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa-solid fa-folder"></i> Folders
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Business Office</a>
-                  <a class="dropdown-item" href="#">General</a>
-                  <a class="dropdown-item" href="#">ELA Department</a>
-                  <a class="dropdown-item" href="#">Humanities Department</a>
-            </li>               
-          </form>
-        </div>
-      </nav>
 
-    <!--Jumbotron-->
-    <div class="jumbotron text-center">
-        <div class="intro">
-            <img src="/img/logo.png">
-            <h1>HCSS Staff Only</h1>
-            <button type="button" class="btn btn-outline-primary">Work Order(East)</button>
-            <button type="button" class="btn btn-outline-primary">Work Order(West)</button>
-        </div>
-    </div>
-</header>
 <body>
-<div class="d-flex justify-content-center m-4">
-  <div class="card-deck">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="/img/breadcrumb-trail.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Instructional Model</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Click for more info</a>
-      </div>
-    </div>
-    
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="/img/breadcrumb-trail.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Bell Schedules</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Click for more info</a>
-      </div>
-    </div>
-  
+    <section class="header">
+        <div class="container">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">WORK ORDER ONLINE SYSTEM</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">How It Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="order.html">Order</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Status Check</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                    </div>
+                </div>
+            </nav>
+            <!---->
+            <div class="middle">
+                <h1 class="text-white fw-bold display-3">We Help you to <span class="theme-color">fix your
+                        problem!</span></h1>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="wave" viewBox="0 0 1440 220">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,64L80,64C160,64,320,64,480,80C640,96,800,128,960,138.7C1120,149,1280,139,1360,133.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+    </section>
 
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="/img/breadcrumb-trail.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Power School</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Click for more info</a>
-    </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="/img/breadcrumb-trail.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Canvas</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Click for more info</a>
-    </div>
-  </div>
-</div>
-</div>
-    <footer>
+    <!--Services-->
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <h1>SERVICES</h1>
+            </div>
+            <div class="row mt-2">
+                <div class="col-sm-6">
+                    <div class="card mb-3 " style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="/img/mobile-friendly.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mobile-Friendly</h5>
+                                    <p class="card-text">Use your smartphone to submit your request in our
+                                        mobile-friendly system. You
+                                        can also take picture and attach it.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    </footer>
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+                <div class="col-sm-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="/img/online tracking.jpeg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Online Tracking</h5>
+                                    <p class="card-text">Track your work order and learn the status online. Once you
+                                        login to your account,
+                                        you can track whether the job is completed or not with your ticket.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="divider">
+    <!--Samples-->
+    <div class="samples mb-4">
+        <h1>Here are same samples!</h1>
+
+
+        <!--carusel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!--Card 1-->>
+                    <div class="container d-flex justify-content-center">
+                        <div class="card mb-3" style="max-width: 100vh;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="/img/schoolm_1.jpeg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--Card 2-->>
+                    <div class="container d-flex justify-content-center">
+                        <div class="card mb-3" style="max-width: 100vh;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="/img/bootstrap-thumb.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--Card 3-->>
+                    <div class="container d-flex justify-content-center">
+                        <div class="card mb-3" style="max-width: 100vh;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="/img/chrome-river.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
 </body>
+<footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mx-auto d-flex justify-content-start">
+                <img src="/img/logo.png">
+                <div class="container my-auto">
+                    <p>Hampden Charter School of Science</p>
+                    <p>20 Johnson Rd. Chicopee, MA 01022</p>
+                    Copyright(c) 2022</p>
+                </div>
+            </div>
+            <div class="col-sm-3 my-auto">
+                <div class="row">
+                    <p>info@hampdencharter.org</p>
+                    <p>Tel. (413) 593 9090</p>
+                    <p>Fax. (413) 593 9012</p>
+                </div>
+            </div>
+            <div class="col-sm-3 my-auto">
+                <div class="row d-flex justify-content-end">
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+
+                </div>
+            </div>
+</footer>
 
 </html>

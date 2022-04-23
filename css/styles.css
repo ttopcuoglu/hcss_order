@@ -1,40 +1,138 @@
-body {
-    font-family: "Open Sans", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Lobster&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Lobster&family=Poppins&family=Ubuntu&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: "Lobster", cursive;
+.header {
+    background-image: url(/img/hcss_asm.jpg);
+    width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
 }
 
-h2 {
-    color: #3046C5;
+
+.wave {
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
 }
 
-header h2 {
-    color: #CEC8FF;
+.middle {
+    display: flex;
+    height: 50vh;
+    width: 80%;
+    justify-content: start;
+    align-items: center;
 }
 
-footer {
-    background-image: linear-gradient(#CEC8FF, white);
-    padding: 20px 0;
+.middle h1 {
+    font-size: 80px;
 }
 
 .jumbotron {
-    margin: 0px;
-    padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
-    color: white;
+    background-image: url(/img/hcss_asm.jpg);
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
-.row-content {
-    padding: 50px;
-    border-bottom: 1px ridge;
-    min-height: 200px;
+.theme-color {
+    color: var(--color1);
 }
-.navbar {
-    background-color: #901CAD;
+
+:root {
+    --color1: #FAB40B;
+    --color2: #73181F;
+    --font2: 'Ubuntu', sans-serif;
+
 }
-.site-footer{
-    background-image: linear-gradient(#CEC8FF, white);
-    padding: 20px 0;
+
+.navbar-brand {
+    color: var(--color1) !important;
+}
+
+.navbar-color {
+    color: var(--color1) !important;
+}
+
+.navbar ul li a:hover {
+    color: var(--color1) !important;
+    border-bottom: 2px solid var(--color1);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    transition: transform .5s;
+}
+
+.services {
+    margin-top: -100px;
+}
+
+.services h1 {
+
+    font-size: 30px;
+    font-family: var(--font2);
+    color: var(--color2);
+    font-weight: bold;
+}
+
+.samples {
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.samples::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(/img/schoolm_1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.25;
+}
+.samples h1 {
+    font-size: 3rem;
+    color: #FAB40B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+.divider{
+    width: 30%;
+    border: solid black;
+    margin : auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 10px;
+    bottom: 0px;
+    line-height: 2px;
+    width: 100%;
+    background-image: linear-gradient(rgb(136, 30, 28, 0.1), rgb(136, 30, 28, 1))
+}
+.img-resize{
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid black;
 }
